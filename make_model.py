@@ -42,8 +42,12 @@ nb_validation_samples = int(VALIDATION_SPLIT * X_train.shape[0])
 
 x_train = X_train[:-nb_validation_samples]
 y_train = Y_train[:-nb_validation_samples]
-x_val = X_train[-nb_validation_samples:]
-y_val = Y_train[-nb_validation_samples:]
+
+x_val = X_train[-nb_validation_samples*2:-nb_validation_samples]
+y_val = Y_train[-nb_validation_samples*2:-nb_validation_samples]
+
+x_test = X_train[-nb_validation_samples:]
+y_test = Y_train[-nb_validation_samples:]
 
 with open('Glove.pkl', 'rb') as f:
 	embeddings_index = pickle.load(f)
@@ -81,7 +85,24 @@ print("model fitting - Bidirectional LSTM")
 model.summary()
 
 model.fit(x_train, y_train, validation_data=(x_val, y_val),
-          epochs=2, batch_size=50)
+          epochs=1, batch_size=50)
+
+# predictions = model.predict(x_test)
+
+# n_correct = 0
+# n_total = 0
+
+# for i, pred in enumerate(predictions[0]):
+#   n_total = n_total + 1
+#   try:
+#     if np.argmax(pred) == np.argmax(y_test[i]):
+#       n_correct = n_correct + 1
+#   except:
+#     pass
+#     # print('NA')
+
+print('TEST ACCURACY: ', model.evaluate(x_test, y_test, verbose=0))
+
 
 
 model.save('initial_model.h5')
