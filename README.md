@@ -4,6 +4,9 @@ A simple POS Tagger made using a Bidirectional LSTM using keras trained on the B
 See DetailedDescription.pdf for a detailed description of the whole project.
 (https://github.com/aneesh-joshi/LSTM_POS_Tagger/blob/master/DetailedDescription.pdf)
 
+**Video Explanation:**
+https://drive.google.com/open?id=0B5-t3yDeHRzKVEZ4VUMwSWtwbDA
+
 **TL;DR:**
 The code does the following:
 
