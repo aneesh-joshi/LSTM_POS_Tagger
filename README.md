@@ -1,5 +1,5 @@
 # LSTM_POS_Tagger
-A simple POS Tagger made using a Bidirectional LSTM using keras trained on the Brown Corpus
+A simple POS Tagger made using a Bidirectional LSTM using keras trained on the Brown Corpus 
 
 See DetailedDescription.pdf for a detailed description of the whole project.
 (https://github.com/aneesh-joshi/LSTM_POS_Tagger/blob/master/DetailedDescription.pdf)
