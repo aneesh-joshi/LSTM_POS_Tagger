@@ -69,7 +69,7 @@ embedding_layer = Embedding(len(word2int) + 1,
                             EMBEDDING_DIM,
                             weights=[embedding_matrix],
                             input_length=MAX_SEQUENCE_LENGTH,
-                            trainable=False)
+                            trainable=True)
 sequence_input = Input(shape=(MAX_SEQUENCE_LENGTH,), dtype='int32')
 embedded_sequences = embedding_layer(sequence_input)
 l_lstm = Bidirectional(LSTM(69, return_sequences=True))(embedded_sequences)
