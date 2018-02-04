@@ -1,14 +1,13 @@
 # LSTM_POS_Tagger
 A simple POS Tagger made using a Bidirectional LSTM using keras trained on the Brown Corpus
 
-Paper used as reference - Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Recurrent Neural Network
-(https://arxiv.org/pdf/1510.06168.pdf)
+Paper used as reference - [Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Recurrent Neural Network](https://arxiv.org/pdf/1510.06168.pdf)
 
-See DetailedDescription.pdf for a detailed description of the whole project.
-(https://github.com/aneesh-joshi/LSTM_POS_Tagger/blob/master/DetailedDescription.pdf)
+See [DetailedDescription.pdf]((https://github.com/aneesh-joshi/LSTM_POS_Tagger/blob/master/DetailedDescription.pdf)) for a detailed description of the whole project.
+
 
 **Video Explanation:**
-https://drive.google.com/open?id=0B5-t3yDeHRzKVEZ4VUMwSWtwbDA
+A video explaining the whole project can be found [here](https://drive.google.com/open?id=0B5-t3yDeHRzKVEZ4VUMwSWtwbDA)
 
 **TL;DR:**
 The code does the following:
