@@ -21,7 +21,34 @@ Uses keras and tensorflow backend
 
 Glove file not included. It can be found [here](https://nlp.stanford.edu/projects/glove/)
 
-Example output of training
+Sample output of training (for 2 epochs):
+```
+(LSTM_POS_Tagger) D:\Projects\LSTM_POS_Tagger>python model_evaluation.py
+Using TensorFlow backend.
+
+The sentence is  ['i', 'want', 'to', 'dance', 'with', 'a', 'girl']
+The tokenized sentence is  [[46187  7416  3956 31382 30171 28645 35332]]
+The padded tokenized sentence is  [[    0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0     0     0     0
+      0     0     0     0     0     0     0     0     0 46187  7416  3956
+  31382 30171 28645 35332]]
+['i', 'want', 'to', 'dance', 'with', 'a', 'girl']
+ppss
+vb-hl
+in-hl
+vb
+in
+at
+nn
+```
+
+
+Example output on training
 ```
 (LSTM_POS_Tagger) D:\Projects\LSTM_POS_Tagger>python make_model.py
 Using TensorFlow backend.
