@@ -1,0 +1,31 @@
+name: LSTM_POS_TAGGER
+channels:
+  - defaults
+dependencies:
+  - certifi=2018.1.18=py36_0
+  - h5py=2.7.1=py36he54a1c3_0
+  - hdf5=1.10.1=h98b8871_1
+  - icc_rt=2017.0.4=h97af966_0
+  - intel-openmp=2018.0.0=hd92c6cd_8
+  - keras=2.1.4=py36_0
+  - libprotobuf=3.4.1=h3dba5dd_0
+  - mkl=2018.0.1=h2108138_4
+  - numpy=1.12.1=py36hf30b8aa_1
+  - pip=9.0.1=py36h226ae91_4
+  - protobuf=3.4.1=py36h07fa351_0
+  - python=3.6.4=h6538335_1
+  - pyyaml=3.12=py36h1d1928f_1
+  - scipy=1.0.0=py36h1260518_0
+  - setuptools=38.5.1=py36_0
+  - six=1.11.0=py36h4db2310_1
+  - tensorflow=1.1.0=np112py36_0
+  - vc=14=h0510ff6_3
+  - vs2015_runtime=14.0.25420=0
+  - werkzeug=0.14.1=py36_0
+  - wheel=0.30.0=py36h6c3ec14_1
+  - wincertstore=0.2=py36h7fe50ca_0
+  - yaml=0.1.7=hc54c509_2
+  - zlib=1.2.11=h8395fce_2
+  - pip:
+    - scikit-learn==0.19.1
+    - sklearn==0.0
