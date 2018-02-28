@@ -9,7 +9,7 @@ See [DetailedDescription.pdf](https://github.com/aneesh-joshi/LSTM_POS_Tagger/bl
 **Video Explanation:**
 A video explaining the whole project can be found [here](https://drive.google.com/open?id=0B5-t3yDeHRzKVEZ4VUMwSWtwbDA)
 
-##**TL;DR:**
+## **TL;DR:**
 The code does the following:
 
 1. Extracts POS tagging training data from the Brown corpus (`extract_data.py`)
@@ -27,7 +27,7 @@ Rest should be handled by the scripts
 ## Setup
 Use `environment.yml` to set up the environment using anaconda
 
-##Sample output of training (for 2 epochs):
+## Sample output of training (for 2 epochs):
 ```
 (LSTM_POS_Tagger) D:\Projects\LSTM_POS_Tagger>python model_evaluation.py
 Using TensorFlow backend.
@@ -54,7 +54,7 @@ nn
 ```
 
 
-##Example output on training
+## Example output on training
 ```
 (LSTM_POS_Tagger) D:\Projects\LSTM_POS_Tagger>python make_model.py
 Using TensorFlow backend.
