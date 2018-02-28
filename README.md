@@ -19,4 +19,42 @@ The code does the following:
 
 Uses keras and tensorflow backend
 
-Glove file not included
+Glove file not included. It can be found [here](https://nlp.stanford.edu/projects/glove/)
+
+Example output of training
+```
+(LSTM_POS_Tagger) D:\Projects\LSTM_POS_Tagger>python make_model.py
+Using TensorFlow backend.
+TOTAL TAGS 471
+TOTAL WORDS 49511
+We have 36634 TRAINING samples
+We have 9159 VALIDATION samples
+We have 11449 TEST samples
+Total 400000 word vectors.
+Embedding matrix shape (49512, 100)
+X_train shape (36634, 100)
+
+model fitting - Bidirectional LSTM
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+input_1 (InputLayer)         (None, 100)               0
+_________________________________________________________________
+embedding_1 (Embedding)      (None, 100, 100)          4951200
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 100, 128)          84480
+_________________________________________________________________
+time_distributed_1 (TimeDist (None, 100, 472)          60888
+=================================================================
+Total params: 5,096,568
+Trainable params: 5,096,568
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/2
+1144/1144 [==============================] - 675s 590ms/step - loss: 0.2088 - acc: 0.9579 - val_loss: 0.0578 - val_acc: 0.9851
+Epoch 2/2
+1144/1144 [==============================] - 701s 613ms/step - loss: 0.0482 - acc: 0.9870 - val_loss: 0.0453 - val_acc: 0.9879
+MODEL SAVED in Models/ as model.h5
+TEST LOSS 0.043562
+TEST ACCURACY: 0.987889
+```

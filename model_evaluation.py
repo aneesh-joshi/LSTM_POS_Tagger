@@ -10,11 +10,10 @@ with open('data.pkl', 'rb') as f:
 	del X_train
 	del Y_train
 
-# statement = ['he', 'is', 'running']
-# statement = 'john is expected to race tomorrow'.split()
+# sentence = 'john is expected to race tomorrow'.split()
 # np bez vbn in nn nn
 
-# statement = 'send me some photos of your body'.split()
+# sentence = 'send me some photos of that tree'.split()
 # vb
 # ppo
 # dti
@@ -23,7 +22,7 @@ with open('data.pkl', 'rb') as f:
 # pp$
 # nn
 
-statement = 'i want to dance with a girl'.split()
+sentence = 'i want to dance with a dog'.split()
 # ppss
 # vb
 # in
@@ -32,30 +31,27 @@ statement = 'i want to dance with a girl'.split()
 # at
 # nn
 
-tokenised_statement = []
+tokenized_sentence = []
 
-for word in statement:
-	tokenised_statement.append(word2int[word])
+for word in sentence:
+	tokenized_sentence.append(word2int[word])
 
-tokenised_statement = np.asarray([tokenised_statement])
+tokenized_sentence = np.asarray([tokenized_sentence])
+padded_tokenized_sentence = pad_sequences(tokenized_sentence, maxlen=100)
 
-print(tokenised_statement)
+print('The sentence is ', sentence)
+print('The tokenized sentence is ',tokenized_sentence)
+print('The padded tokenized sentence is ', padded_tokenized_sentence)
 
+model = load_model('Models/model.h5')
 
-tokenised_statement = pad_sequences(tokenised_statement, maxlen=100)
-
-print(tokenised_statement)
-
-model = load_model('initial_model.h5')
-
-prediction = model.predict(tokenised_statement)
+prediction = model.predict(padded_tokenized_sentence)
 
 print(prediction.shape)
 
-for pred in prediction[0]:
-	# print(pred, "LOOL")
+for i, pred in enumerate(prediction[0]):
 	try:
-		print(int2tag[np.argmax(pred)])
+		print(sentence[i], ' : ', int2tag[np.argmax(pred)])
 	except:
 		pass
 		# print('NA')
