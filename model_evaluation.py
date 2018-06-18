@@ -3,13 +3,18 @@ import pickle
 import numpy as np
 from keras.preprocessing.sequence import pad_sequences
 from keras.utils.np_utils import to_categorical
+from extract_data import get_data
 
-with open('data.pkl', 'rb') as f:
-	X_train, Y_train, word2int, int2word, tag2int, int2tag = pickle.load(f)
+# with open('PickledData/data.pkl', 'rb') as f:
+X_train, Y_train, word2int, int2word, tag2int, int2tag = get_data()
 
-	del X_train
-	del Y_train
+del X_train
+del Y_train
 
+model = load_model('Models/model.h5')
+
+
+# sentence = ['he', 'is', 'running']
 # sentence = 'john is expected to race tomorrow'.split()
 # np bez vbn in nn nn
 
@@ -22,7 +27,7 @@ with open('data.pkl', 'rb') as f:
 # pp$
 # nn
 
-sentence = 'i want to dance with a dog'.split()
+sentence = 'i want to dance with a girl'.split()
 # ppss
 # vb
 # in
@@ -43,15 +48,13 @@ print('The sentence is ', sentence)
 print('The tokenized sentence is ',tokenized_sentence)
 print('The padded tokenized sentence is ', padded_tokenized_sentence)
 
-model = load_model('Models/model.h5')
 
 prediction = model.predict(padded_tokenized_sentence)
 
-print(prediction.shape)
-
-for i, pred in enumerate(prediction[0]):
+print(sentence)
+for pred in prediction[0]:
 	try:
-		print(sentence[i], ' : ', int2tag[np.argmax(pred)])
+		print(int2tag[np.argmax(pred)])
 	except:
 		pass
 		# print('NA')

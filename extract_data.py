@@ -1,12 +1,15 @@
 import pickle
 import numpy as np
 import os
+from collections import defaultdict
+from functools import partial
+
 
 files = os.listdir('brown/')
 
 # In case your system can't handle all 500 samples
 # set the number of samples to a reasonable number like 20
-n_sample_files = 500
+n_sample_files = 250
 
 print('TOTAL NO. OF FILES ', len(files), '\n')
 print('RUNNING ON ', n_sample_files, ' FILES\n')
@@ -34,6 +37,7 @@ for line in corpus:
     if(len(line)>0):
         tempX = []
         tempY = []
+
         for word in line.split():
             try:            
                 w, tag = word.split('/')
@@ -68,20 +72,36 @@ print('TOTAL TAGS: ', len(tags))
 
 assert len(X_train) == len(Y_train)
 
-
+# ===========================================
 word2int = {}
 int2word = {}
 
+# we add 1 below to ensure that we leave 0 to represent the PAD word
 for i, word in enumerate(words):
     word2int[word] = i+1
     int2word[i+1] = word
 
+word2int['PAD_word'] = 0
+int2word[0] = 'PAD_word'
+
+# But we also need to handle unknown words
+# We need to add <UNK> word as the last word with the last index
+word2int['<UNK>'] = len(int2word)
+int2word[len(int2word)] = '<UNK>'
+
+# Make tag-int dicts ========================
 tag2int = {}
 int2tag = {}
 
+# we add 1 below to ensure that we leave 0 to represent the tag corresponding to the PAD word
 for i, tag in enumerate(tags):
     tag2int[tag] = i+1
     int2tag[i+1] = tag
+
+tag2int['PAD_tag'] = 0
+int2tag[0] = 'PAD_tag'
+
+# ===========================================================
 
 X_train_numberised = []
 Y_train_numberised = []

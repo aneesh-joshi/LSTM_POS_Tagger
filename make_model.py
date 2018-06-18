@@ -25,15 +25,18 @@ with open('PickledData/data.pkl', 'rb') as f:
     X, y, word2int, int2word, tag2int, int2tag = pickle.load(f)
 
 
-def generator(all_X, all_y, n_classes, batch_size=BATCH_SIZE):
+def generator(all_X, all_y, n_classes, batch_size=32, max_seq_len=100):
     num_samples = len(all_X)
 
     while True:
 
         for offset in range(0, num_samples, batch_size):
             
-            X = all_X[offset:offset+batch_size]
-            y = all_y[offset:offset+batch_size]
+            X = all_X[offset : offset+batch_size]
+            y = all_y[offset : offset+batch_size]
+
+            X = pad_sequences(X, maxlen=MAX_SEQUENCE_LENGTH)
+            y = pad_sequences(y, maxlen=MAX_SEQUENCE_LENGTH)
 
             y = to_categorical(y, num_classes=n_classes)
 
@@ -42,11 +45,6 @@ def generator(all_X, all_y, n_classes, batch_size=BATCH_SIZE):
 
 
 n_tags = len(tag2int)
-
-X = pad_sequences(X, maxlen=MAX_SEQUENCE_LENGTH)
-y = pad_sequences(y, maxlen=MAX_SEQUENCE_LENGTH)
-
-# y = to_categorical(y, num_classes=len(tag2int) + 1)
 
 print('TOTAL TAGS', len(tag2int))
 print('TOTAL WORDS', len(word2int))
@@ -68,9 +66,22 @@ print('We have %d TRAINING samples' % n_train_samples)
 print('We have %d VALIDATION samples' % n_val_samples)
 print('We have %d TEST samples' % n_test_samples)
 
+# number of classes has to be one more than number of tags
+# to accomodate the prediction for a word which is a padding word
+n_classes = n_tags + 1
+
 # make generators for training and validation
-train_generator = generator(all_X=X_train, all_y=y_train, n_classes=n_tags + 1)
-validation_generator = generator(all_X=X_val, all_y=y_val, n_classes=n_tags + 1)
+train_generator = generator(all_X=X_train, 
+                            all_y=y_train, 
+                            n_classes=n_classes, 
+                            batch_size=BATCH_SIZE, 
+                            max_seq_len=MAX_SEQUENCE_LENGTH)
+
+validation_generator = generator(all_X=X_val, 
+                                 all_y=y_val, 
+                                 n_classes=n_classes, 
+                                 batch_size=BATCH_SIZE, 
+                                 max_seq_len=MAX_SEQUENCE_LENGTH)
 
 
 
@@ -132,7 +143,12 @@ else:
     from keras.models import load_model
     model = load_model('Models/model.h5')
 
-y_test = to_categorical(y_test, num_classes=n_tags+1)
+# We need to put the test data through the same preprocessing we used for 
+# our training data. Except, we won't need a generator for such a small set
+X_test = pad_sequences(X_test, maxlen=MAX_SEQUENCE_LENGTH)
+y_test = pad_sequences(y_test, maxlen=MAX_SEQUENCE_LENGTH)
+y_test = to_categorical(y_test, num_classes=n_classes)
+
 test_results = model.evaluate(X_test, y_test, verbose=0)
 print('TEST LOSS %f \nTEST ACCURACY: %f' % (test_results[0], test_results[1]))
 
