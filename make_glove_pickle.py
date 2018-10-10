@@ -8,14 +8,12 @@ This script converts the specified Glove file into a pickled dict
 
 embeddings_index = {}
 
-glove_file = open('glove.6B.100d.txt', encoding="utf8")
-
-for line in glove_file:
-    values = line.split()
-    word = values[0]
-    coefs = np.asarray(values[1:], dtype='float32')
-    embeddings_index[word] = coefs
-f.close()
+with open('glove.6B.100d.txt', encoding="utf8") as glove_file:
+    for line in glove_file:
+        values = line.split()
+        word = values[0]
+        coefs = np.asarray(values[1:], dtype='float32')
+        embeddings_index[word] = coefs
 
 if not os.path.exists('PickledData/'):
     print('MAKING DIRECTORY PickledData/ to save pickled glove file')
