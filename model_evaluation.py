@@ -4,7 +4,7 @@ import numpy as np
 from keras.preprocessing.sequence import pad_sequences
 from keras.utils.np_utils import to_categorical
 
-with open('data.pkl', 'rb') as f:
+with open('PickledData/data.pkl', 'rb') as f:
 	X_train, Y_train, word2int, int2word, tag2int, int2tag = pickle.load(f)
 
 	del X_train
@@ -50,8 +50,8 @@ prediction = model.predict(padded_tokenized_sentence)
 print(prediction.shape)
 
 for i, pred in enumerate(prediction[0]):
-	try:
-		print(sentence[i], ' : ', int2tag[np.argmax(pred)])
-	except:
-		pass
-		# print('NA')
+	if i >= len(list(enumerate(prediction[0]))) - len(sentence):
+		try:
+			print(int2word[padded_tokenized_sentence[0][i]], int2tag[np.argmax(pred)])
+		except KeyError:
+			pass
