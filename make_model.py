@@ -54,7 +54,7 @@ print('TOTAL WORDS', len(word2int))
 # shuffle the data
 X, y = shuffle(X, y)
 
-# split data into train and test
+# split data into train and testData
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SPLIT,random_state=42)
 
 # split training data into train and validation
