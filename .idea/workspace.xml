@@ -2,8 +2,511 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779d41cd-3a6d-4c8c-b8cc-ab2b9b1c8d82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/extract_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/extract_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/make_glove_pickle.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_glove_pickle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PickledData/data.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca31" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca39" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ca44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cb27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cc17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cd17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce31" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ce36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf31" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf39" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cf48" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg31" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg39" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg48" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg49" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg50" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg51" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg52" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg53" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg55" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg56" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg59" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg63" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg65" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg66" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg67" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg68" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg69" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg70" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg71" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg72" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg73" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg74" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cg75" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ch30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj31" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj36" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj38" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj39" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj42" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj44" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj48" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj49" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj50" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj51" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj52" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj53" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj55" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj56" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj59" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj60" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj63" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj65" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj66" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj67" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj68" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj69" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj70" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj71" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj72" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj73" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj74" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj75" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj77" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj78" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj79" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cj80" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/ck29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cl24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cm01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cm02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cm03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cm04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cm05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cm06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cn29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cp29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cr01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cr02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cr03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cr04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cr05" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cr06" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cr07" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cr08" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brown/cr09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extract_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_glove_pickle.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,30 +517,44 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extract_data.py">
+        <entry file="file://$PROJECT_DIR$/Notes.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/make_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/make_glove_pickle.py">
+        <entry file="file://$PROJECT_DIR$/data_loader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#122#131#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="276">
+              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -57,6 +574,7 @@
       <list>
         <option value="$PROJECT_DIR$/extract_data.py" />
         <option value="$PROJECT_DIR$/make_glove_pickle.py" />
+        <option value="$PROJECT_DIR$/data_loader.py" />
       </list>
     </option>
   </component>
@@ -101,7 +619,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.data_loader">
+    <configuration name="data_loader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LSTM_POS_Tagger" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_loader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="extract_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LSTM_POS_Tagger" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,6 +664,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.data_loader" />
         <item itemvalue="Python.extract_data" />
         <item itemvalue="Python.extract_data" />
       </list>
@@ -145,17 +685,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="690" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24944155" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32976827" />
       <window_info anchor="bottom" id="Python Console" weight="0.32976827" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32976827" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32976827" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5003723" side_tool="true" weight="0.32976827" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996277" weight="0.32976827" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996277" visible="true" weight="0.32976827" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -172,7 +713,7 @@
     <entry file="file://$PROJECT_DIR$/extract_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -181,11 +722,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/make_glove_pickle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="66">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding>
             <element signature="e#122#131#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
         </state>
       </provider>
     </entry>
