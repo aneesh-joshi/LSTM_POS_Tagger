@@ -1,10 +1,13 @@
+"""
+Script to convert the specified Glove file into a pickled dict.
+Should become redundant with gensim-data support
+"""
+
 import os
 import pickle
 import numpy as np
+import gensim
 
-'''
-This script converts the specified Glove file into a pickled dict
-'''
 
 embeddings_index = {}
 

@@ -1,9 +1,13 @@
+"""
+Script to:
+1. extract data from the brown corpus
+2. Tokenize words and tags
+3. Numberize words and tags ("hello" <-> 32) ("NN" <-> 65)
+4. Saving processed data into a pickled file in PickledData/data.pkl
+"""
 import pickle
 import numpy as np
 import os
-from collections import defaultdict
-from functools import partial
-
 
 files = os.listdir('brown/')
 
@@ -22,7 +26,7 @@ for file in files[0:n_sample_files]:
 
 corpus = raw_corpus.split('\n')
 
-print('CORPUS SIZE', len(corpus), '\n')
+print('Corpus has %d sentences\n' %  len(corpus))
 
 X_train = []
 Y_train = []
@@ -42,7 +46,10 @@ for line in corpus:
             try:            
                 w, tag = word.split('/')
             except:
-                # with_slash = True
+                # Here we are omitting all sentences which have words with
+                # multiple slashes. Example: d/or/cc
+                # Ideally, we should break it into "d/or" with tag "cc"
+                # This is cuurently a TODO
                 n_omitted = n_omitted + 1
                 break
 
@@ -133,4 +140,4 @@ if not os.path.exists('PickledData/'):
 with open('PickledData/data.pkl', 'wb') as f:
     pickle.dump(pickle_files, f)
 
-print('Saved as pickle file')
+print('Saved as pickle file in PickledData/data.pkl')
